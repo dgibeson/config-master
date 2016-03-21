@@ -1,5 +1,9 @@
 info:
   component: Zuul Server
+  
+webApp:
+  discoveryUrl: "http://yellow4:8761"
+  turbineUrl: "http://yellow4:8765/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8765%2Fhystrix.stream"
 
 eureka:
   instance:
