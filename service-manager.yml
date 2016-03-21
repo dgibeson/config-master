@@ -26,7 +26,7 @@ serviceManager:
       ports: 
         - "8761" 
       bootstrapHosts: 
-        - "localhost"
+        - "yellow4"
     router: 
       sslEnabled: false
       discovery-client: true 
@@ -34,7 +34,7 @@ serviceManager:
       ports: 
         - "8765" 
       bootstrapHosts: 
-        - "localhost"
+        - "yellow4"
     query-service: 
       sslEnabled: false
       discovery-client: true 
@@ -42,7 +42,7 @@ serviceManager:
       ports: 
         - "8762" 
       bootstrapHosts: 
-        - "localhost"
+        - "yellow4"
     self-test:
       sslEnabled: false
       discoveryClient: true
@@ -61,7 +61,7 @@ serviceManager:
       ports:
         - "9090-9095"
       bootstrapHosts:
-        - "localhost"
+        - "yellow4"
     merchant-locator:
       sslEnabled: false
       discovery-client: true
@@ -80,6 +80,6 @@ serviceManager:
       ports: 
         - "9000-9003"
       bootstrapHosts:
-        - "localhost"
+        - "yellow4"
 
         
