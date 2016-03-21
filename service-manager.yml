@@ -14,7 +14,7 @@ serviceManager:
   enable-docker: false
   enable-auto-bootstrap: true
   newServiceRegistrationTimeout: 300000
-  redisHost: 192.168.99.100
+  redisHost: yellow2
   redisPort: 6379
   tempJarDirectory: "/tmp/jars"
   serviceConfig:
@@ -26,7 +26,7 @@ serviceManager:
       ports: 
         - "8761" 
       bootstrapHosts: 
-        - "timothys-iMac.local"
+        - "yellow2"
     router: 
       sslEnabled: false
       discovery-client: true 
@@ -34,7 +34,8 @@ serviceManager:
       ports: 
         - "8765" 
       bootstrapHosts: 
-        - "timothys-iMac.local"
+       - "yellow2"
+       ## - "timothys-iMac.local"
     query-service: 
       sslEnabled: false
       discovery-client: true 
@@ -42,7 +43,8 @@ serviceManager:
       ports: 
         - "8762" 
       bootstrapHosts: 
-        - "timothys-iMac.local"
+       - "yellow2"
+       ## - "timothys-iMac.local"
     self-test:
       sslEnabled: false
       discoveryClient: true
@@ -61,7 +63,8 @@ serviceManager:
       ports:
         - "9090-9095"
       bootstrapHosts:
-        - "timothys-iMac.local"
+       - "yellow2"
+       ## - "timothys-iMac.local"
     merchant-locator:
       sslEnabled: false
       discovery-client: true
@@ -80,6 +83,7 @@ serviceManager:
       ports: 
         - "9000-9003"
       bootstrapHosts:
-        - "timothys-iMac.local"
+       - "yellow2"
+       ## - "timothys-iMac.local"
 
         
