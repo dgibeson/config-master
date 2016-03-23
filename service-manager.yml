@@ -26,7 +26,7 @@ serviceManager:
       ports: 
         - "8761" 
       bootstrapHosts: 
-        - "yellow4"
+        - "localhost"
     #router: 
     #  sslEnabled: false
     #  discovery-client: true 
