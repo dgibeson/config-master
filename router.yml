@@ -21,7 +21,7 @@ logging:
     org.springframework.web: DEBUG
      
 router:
-  redisHost: 10.1.1.90
+  redisHost: localhost
   redisPort: 6379
   services:
     merchant-locator:
