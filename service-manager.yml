@@ -14,7 +14,7 @@ serviceManager:
   enable-docker: false
   enable-auto-bootstrap: true
   newServiceRegistrationTimeout: 300000
-  redisHost: 10.1.1.90
+  redisHost: localhost
   redisPort: 6379
   tempJarDirectory: "/tmp/jars"
   serviceConfig:
@@ -27,14 +27,14 @@ serviceManager:
         - "8761" 
       bootstrapHosts: 
         - ${HOSTNAME}
-    #router: 
-    #  sslEnabled: false
-    #  discovery-client: true 
-    #  version: "0.4.5-SNAPSHOT" 
-    #  ports: 
-    #    - "8765" 
-    #  bootstrapHosts: 
-    #    - "yellow4"
+    router: 
+      sslEnabled: false
+      discovery-client: true 
+      version: "0.4.5-SNAPSHOT" 
+      ports: 
+        - "8765" 
+      bootstrapHosts: 
+        - ${HOSTNAME}
     #query-service: 
     #  sslEnabled: false
     #  discovery-client: true 
